@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import '../organisms/DrawerContent.dart';
-import '../organisms/SnackBarBody.dart';
+import '../organisms/drawer_content.dart';
+import '../organisms/snack_bar_body.dart';
 
 class SnackBarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const String title = 'Snack bar Page';
+    const title = 'Snack bar Page';
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text(title),
       ),
       drawer: DrawerContent(),
       body: SnackBarBody(),

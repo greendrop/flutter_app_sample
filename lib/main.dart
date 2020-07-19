@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import './components/pages/HomePage.dart';
-import './components/pages/NavigatorPage.dart';
-import './components/pages/SnackBarPage.dart';
 import './change_notifiers/count_change_notifier.dart';
+import './components/pages/home_page.dart';
+import './components/pages/navigator_page.dart';
+import './components/pages/snack_bar_page.dart';
 
 void main() {
   runApp(

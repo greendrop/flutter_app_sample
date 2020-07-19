@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import '../organisms/NavigatorChildBody.dart';
+import '../organisms/navigator_child_body.dart';
 
 class NavigatorChildPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const String title = 'Navigator Child Page';
+    const title = 'Navigator Child Page';
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text(title),
       ),
       body: NavigatorChildBody(),
     );

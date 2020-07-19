@@ -11,7 +11,7 @@ class HomeBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(
+          const Text(
             'You have pushed the button this many times:',
           ),
           Text(

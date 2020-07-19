@@ -19,19 +19,19 @@ class DrawerContent extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Home'),
+            title: const Text('Home'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
           ),
           ListTile(
-            title: Text('Navigator'),
+            title: const Text('Navigator'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/navigator');
             },
           ),
           ListTile(
-            title: Text('Snack bar'),
+            title: const Text('Snack bar'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/snack_bar');
             },

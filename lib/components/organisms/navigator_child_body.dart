@@ -9,7 +9,7 @@ class NavigatorChildBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           FlatButton(
-            child: Text('POP'),
+            child: const Text('POP'),
             onPressed: () {
               Navigator.of(context).pop();
             },

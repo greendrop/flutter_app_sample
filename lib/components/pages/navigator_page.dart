@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import '../organisms/DrawerContent.dart';
-import '../organisms/NavigatorBody.dart';
+import '../organisms/drawer_content.dart';
+import '../organisms/navigator_body.dart';
 
 class NavigatorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const String title = 'Navigator Page';
+    const title = 'Navigator Page';
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text(title),
       ),
       drawer: DrawerContent(),
       body: NavigatorBody(),

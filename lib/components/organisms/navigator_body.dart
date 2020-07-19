@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../pages/NavigatorChildPage.dart';
+import '../pages/navigator_child_page.dart';
 
 class NavigatorBody extends StatelessWidget {
   @override
@@ -10,9 +10,9 @@ class NavigatorBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           FlatButton(
-            child: Text('PUSH'),
+            child: const Text('PUSH'),
             onPressed: () {
-              Navigator.of(context).push(
+              Navigator.of(context).push<MaterialPageRoute>(
                 MaterialPageRoute(
                   builder: (context) {
                     return NavigatorChildPage();

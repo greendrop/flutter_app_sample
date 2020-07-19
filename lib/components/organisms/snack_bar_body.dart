@@ -9,10 +9,10 @@ class SnackBarBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           FlatButton(
-            child: Text('SHOW'),
+            child: const Text('SHOW'),
             onPressed: () {
-              Scaffold.of(context).showSnackBar(new SnackBar(
-                content: new Text('Hello snack bar!'),
+              Scaffold.of(context).showSnackBar(const SnackBar(
+                content: const Text('Hello snack bar!'),
               ));
             },
           )

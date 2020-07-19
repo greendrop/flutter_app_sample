@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../organisms/DrawerContent.dart';
-import '../organisms/HomeBody.dart';
 import '../../change_notifiers/count_change_notifier.dart';
+import '../organisms/drawer_content.dart';
+import '../organisms/home_body.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const String title = 'Home Page';
+    const title = 'Home Page';
     final countChangeProvider = Provider.of<CountChangeNotifier>(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text(title),
       ),
       drawer: DrawerContent(),
       body: HomeBody(),
