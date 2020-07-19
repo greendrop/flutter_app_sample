@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import './components/pages/HomePage.dart';
 import './components/pages/NavigatorPage.dart';
+import './components/pages/SnackBarPage.dart';
 import './change_notifiers/count_change_notifier.dart';
 
 void main() {
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         '/': (BuildContext context) => HomePage(),
         '/navigator': (BuildContext context) => NavigatorPage(),
+        '/snack_bar': (BuildContext context) => SnackBarPage(),
       }
     );
   }
