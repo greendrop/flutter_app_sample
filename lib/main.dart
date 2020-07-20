@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_state_notifier/flutter_state_notifier.dart';
 import 'package:provider/provider.dart';
-import './change_notifiers/count_change_notifier.dart';
-import './components/pages/home_page.dart';
-import './components/pages/navigator_page.dart';
-import './components/pages/snack_bar_page.dart';
+import 'package:flutter_app/components/pages/home_page.dart';
+import 'package:flutter_app/components/pages/navigator_page.dart';
+import 'package:flutter_app/components/pages/snack_bar_page.dart';
+import 'package:flutter_app/states/counter_state.dart';
 
 void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => CountChangeNotifier(),
-        )
+        StateNotifierProvider<CounterStateNotifier, CounterState>(
+          create: (_) => CounterStateNotifier()
+        ),
       ],
       child: MyApp(),
     )

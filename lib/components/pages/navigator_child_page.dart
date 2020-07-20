@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../organisms/navigator_child_body.dart';
+import 'package:flutter_app/components/organisms/navigator_child_body.dart';
 
 class NavigatorChildPage extends StatelessWidget {
   @override

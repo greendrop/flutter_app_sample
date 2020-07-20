@@ -12,7 +12,7 @@ class SnackBarBody extends StatelessWidget {
             child: const Text('SHOW'),
             onPressed: () {
               Scaffold.of(context).showSnackBar(const SnackBar(
-                content: const Text('Hello snack bar!'),
+                content: Text('Hello snack bar!'),
               ));
             },
           )

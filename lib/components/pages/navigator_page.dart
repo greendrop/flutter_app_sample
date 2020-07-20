@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../organisms/drawer_content.dart';
-import '../organisms/navigator_body.dart';
+import 'package:flutter_app/components/organisms/drawer_content.dart';
+import 'package:flutter_app/components/organisms/navigator_body.dart';
 
 class NavigatorPage extends StatelessWidget {
   @override

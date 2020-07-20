@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../organisms/drawer_content.dart';
-import '../organisms/snack_bar_body.dart';
+import 'package:flutter_app/components/organisms/drawer_content.dart';
+import 'package:flutter_app/components/organisms/snack_bar_body.dart';
 
 class SnackBarPage extends StatelessWidget {
   @override
