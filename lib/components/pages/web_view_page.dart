@@ -7,7 +7,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 class WebViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const title = 'Web View';
+    const title = 'Web view';
     WebViewController controller;
     final controllerCompleter = Completer<WebViewController>();
 

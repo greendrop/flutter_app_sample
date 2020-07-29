@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/components/pages/web_view_plugin_page.dart';
 
 class DrawerContent extends StatelessWidget {
   @override
@@ -37,9 +38,19 @@ class DrawerContent extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Web View'),
+            title: const Text('Web view'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/web_view');
+            },
+          ),
+          ListTile(
+            title: const Text('Web view plugin'),
+            onTap: () {
+              Navigator.of(context).push<MaterialPageRoute>(MaterialPageRoute(
+                builder: (context) {
+                  return WebViewPluginPage();
+                },
+              ));
             },
           ),
         ],
