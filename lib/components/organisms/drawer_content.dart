@@ -36,6 +36,12 @@ class DrawerContent extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed('/snack_bar');
             },
           ),
+          ListTile(
+            title: const Text('Web View'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed('/web_view');
+            },
+          ),
         ],
       ),
     );
