@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/components/pages/home_page.dart';
 import 'package:flutter_app/components/pages/navigator_page.dart';
 import 'package:flutter_app/components/pages/snack_bar_page.dart';
+import 'package:flutter_app/components/pages/toast_page.dart';
 import 'package:flutter_app/components/pages/web_view_page.dart';
 import 'package:flutter_app/states/counter_state.dart';
 import 'package:flutter_state_notifier/flutter_state_notifier.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
           '/': (BuildContext context) => HomePage(),
           '/navigator': (BuildContext context) => NavigatorPage(),
           '/snack_bar': (BuildContext context) => SnackBarPage(),
+          '/toast': (BuildContext context) => ToastPage(),
           '/web_view': (BuildContext context) => WebViewPage(),
         });
   }

@@ -7,7 +7,7 @@ class DrawerContent extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          DrawerHeader(
+          const DrawerHeader(
             child: Text(
               'Flutter Demo',
               style: TextStyle(
@@ -35,6 +35,12 @@ class DrawerContent extends StatelessWidget {
             title: const Text('Snack bar'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/snack_bar');
+            },
+          ),
+          ListTile(
+            title: const Text('Toast'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed('/toast');
             },
           ),
           ListTile(
